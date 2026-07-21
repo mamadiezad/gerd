@@ -1,0 +1,7 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0d1117;color:#e0e0e0}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#0d1117}
+::-webkit-scrollbar-thumb{background:#313244;border-radius:3px}
+input,textarea,select{outline:none}
+a{color:#7c3aed;text-decoration:none}
