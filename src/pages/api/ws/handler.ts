@@ -4,7 +4,7 @@ import http from 'http';
 import { WebSocketServer } from 'ws';
 import { connectDB, Online } from '@/lib/db';
 
-async function startWS() {
+export async function startWS() {
   await connectDB();
   const server = http.createServer();
   const wss = new WebSocketServer({ server, path: '/ws' });
@@ -37,4 +37,6 @@ async function startWS() {
 
   server.listen(3002, () => console.log('WS:3002'));
 }
-startWS().catch(console.error);
+// startWS is called separately(console.error);
+
+export const config = { api: { bodyParser: false } };

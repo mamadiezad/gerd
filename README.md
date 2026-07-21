@@ -1,6 +1,6 @@
 # 🌐 Gerd — شبکه اجتماعی خصوصی (Self-hosted)
 
-> **Gerd** یه پلتفرم ارتباطی مثل Discord/Slack هستش که روی سرور خودت نصب میکنی.
+> **Gerd** (گِرد) یه **پلتفرم ارتباطی مثل Discord/Slack** هستش که روی سرور خودت نصب میکنی.
 > یه نفره راه میندازه، بقیه عضو میشن — بدون تحریم، بدون فیلتر، بدون محدودیت.
 
 ## 🎯 برای کیه؟
@@ -78,6 +78,16 @@ npm run dev
 docker-compose logs -f app    # logs app
 docker-compose logs -f mongo  # logs database
 ```
+
+## 🏷️ Keywords
+
+`social network` `self-hosted` `discord alternative` `persian` `farsi` `team chat` 
+`private messaging` `file sharing` `docker` `nextjs` `mongodb` `open source` 
+`privacy first` `community platform` `ایران` `شبکه اجتماعی` `پیام‌رسان` 
+`گروه خصوصی` `غیرمتمرکز` `self-hosted social media`
+
+---
+
 ## 🚀 شروع سریع
 
 ### با Docker
