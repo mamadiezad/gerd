@@ -1,0 +1,33 @@
+# 🌐 Gerd Configuration
+# ======================
+# Copy this file to gerd.conf and edit the values.
+# Then run: bash deploy.sh
+#
+# This config is used ONLY by deploy.sh
+# ======================
+
+# ─── Domain ───
+# Your domain that points to this server
+DOMAIN=gerd.example.com
+
+# ─── SSL ───
+# Email for Let's Encrypt notifications
+EMAIL=admin@example.com
+
+# ─── Security ───
+# JWT Secret for authentication (use a long random string)
+JWT_SECRET=$(openssl rand -hex 32)
+
+# ─── Database ───
+# Path to store MongoDB data on host
+MONGO_PATH=./data/mongo
+
+# ─── Setup ───
+# Use Docker to run (recommended)
+USE_DOCKER=yes
+
+# ─── Admin ───
+ADMIN_USERNAME=admin
+# Auto-generated on first run
+ADMIN_PASSWORD=
+INVITE_CODES=GERD2024

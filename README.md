@@ -28,6 +28,56 @@
 | 🔐 **دعوت با کد** | فقط کسایی که کد دارن میان |
 | 🐳 **داکر** | نصب با یه خط فرمان |
 
+
+
+## 🚀 Deploy
+
+### 🚀 One-Click Deploy (روی هر سرور اوبونتو/دبیان)
+
+همه چی اتوماتیک: نصب Docker، کلون پروژه، MongoDB، Nginx، SSL و شروع سرویس.
+
+```bash
+# روی سرور SSH کن و اینارو بزن:
+wget -O deploy.sh https://raw.githubusercontent.com/mamadiezad/gerd/main/deploy.sh
+bash deploy.sh
+```
+
+### کانفیگ دستی
+
+```bash
+# 1. Clone
+git clone https://github.com/mamadiezad/gerd.git
+cd gerd
+
+# 2. Copy and edit config
+cp gerd.conf.example gerd.conf
+nano gerd.conf    # domain, email, etc
+
+# 3. Run deployer
+bash deploy.sh
+```
+
+### 🐳 نصب معمولی با Docker
+```bash
+docker-compose up --build -d
+```
+
+### 📦 نصب معمولی (بدون Docker)
+```bash
+cp .env.example .env.local
+# ویرایش .env.local
+npm install
+npm run dev
+```
+
+### 👤 اولین کاربر
+اولین کسی که ثبت‌نام میکنه، نقش **superadmin** میگیره و بقیه با کد دعوت عضو میشن.
+
+### 📋 Logs
+```bash
+docker-compose logs -f app    # logs app
+docker-compose logs -f mongo  # logs database
+```
 ## 🚀 شروع سریع
 
 ### با Docker

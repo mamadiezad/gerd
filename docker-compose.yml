@@ -1,17 +1,34 @@
 version: "3.9"
+
 services:
   app:
     build: .
-    ports: ["3000:3000"]
+    ports:
+      - "3000:3000"
     environment:
       - MONGODB_URI=mongodb://mongo:27017/gerd
-      - JWT_SECRET=change-in-production
-      - INVITE_CODES=GERD2024
-    depends_on: [mongo]
+      - JWT_SECRET=${JWT_SECRET:-change-me}
+      - SITE_URL=${SITE_URL:-http://localhost:3000}
+      - INVITE_CODES=${INVITE_CODES:-GERD2024}
+    depends_on:
+      - mongo
     restart: unless-stopped
+    networks:
+      - gerd-net
+
   mongo:
     image: mongo:7
-    ports: ["27017:27017"]
-    volumes: [mongo_data:/data/db]
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
     restart: unless-stopped
-volumes: { mongo_data: }
+    networks:
+      - gerd-net
+
+volumes:
+  mongo_data:
+
+networks:
+  gerd-net:
+    driver: bridge
