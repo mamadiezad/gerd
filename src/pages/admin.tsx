@@ -37,6 +37,7 @@ export default function AdminPage() {
   }
 
   return (
+    <>
     <div style={{ padding:24, maxWidth:800, margin:'0 auto' }}>
       <Head><title>Gerd — پنل مدیریت</title></Head>
       <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:24 }}>
@@ -78,6 +79,12 @@ export default function AdminPage() {
         <p style={{ fontSize:13, color:'#6b7280' }}>پشتیبانی: <a href="https://t.me/llllxyz" style={{ color:'#7c3aed' }}>@llllxyz</a></p>
       </div>
     </div>
+
+
+      <footer style={{ textAlign:"center", padding:8, fontSize:11, color:"#6b7280", borderTop:"1px solid #313244", marginTop:20 }}>
+        ساخته شده با ❤️ توسط <a href="https://t.me/llllxyz" style={{ color:"#7c3aed" }}>Mohammad</a> | <a href="https://github.com/mamadiezad/gerd" style={{ color:"#6b7280" }}>MIT License</a>
+      </footer>
+    </>
   );
 }
 const btnStyle: any = { background:'#7c3aed', color:'white', border:'none', padding:'4px 12px', borderRadius:6, cursor:'pointer', fontSize:12 };

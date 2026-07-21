@@ -72,3 +72,9 @@ gerd/
 ---
 
 <p align="center">ساخته شده با ❤️ توسط <a href="https://t.me/llllxyz">Mohammad</a></p>
+---
+
+<p align="center">
+  ساخته شده با ❤️ توسط <a href="https://t.me/llllxyz">Mohammad</a> | 
+  <a href="https://github.com/mamadiezad/gerd/blob/main/LICENSE">MIT License</a>
+</p>
