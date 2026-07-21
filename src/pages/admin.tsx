@@ -82,7 +82,7 @@ export default function AdminPage() {
 
 
       <footer style={{ textAlign:"center", padding:8, fontSize:11, color:"#6b7280", borderTop:"1px solid #313244", marginTop:20 }}>
-        ساخته شده با ❤️ توسط <a href="https://t.me/llllxyz" style={{ color:"#7c3aed" }}>Mohammad</a> | <a href="https://github.com/mamadiezad/gerd" style={{ color:"#6b7280" }}>MIT License</a>
+        ساخته شده با ❤️ توسط <a href="https://t.me/llllxyz" style={{ color:"#7c3aed" }}>Mohammad</a>
       </footer>
     </>
   );
